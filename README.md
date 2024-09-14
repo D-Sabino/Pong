@@ -1,143 +1,43 @@
-# Curso Desenvolvimento de Games Completo (Danki.Code)
+# Pong Clone
+Este é um projeto simples que recria o clássico jogo Pong, desenvolvido em JAVA. O objetivo é aprender e praticar conceitos de programação de jogos 2D, como movimentação de objetos, detecção de colisões, e controle por teclado.
 
-## Descrição do projeto
-<p align="justify">
-  Curso Desenvolvimento de Games Completo <br>
-  Curso da Danki.Code: https://cursos.dankicode.com/curso-dev-games
-</p>
+## Sobre o pong
+Pong éum dos primeiros videogames já criados, lançado em 1972 pela Atari. O jogo simula um tênis de mesa, onde dois jogadores controlam barras que movem-se verticalmente nas extremidades da tela, com o objetivo de acertar uma bola e evitar que ela passe para o lado oposto.
 
-<br><br>
-<h2>Comandos executados durante o curso e suas explicações:</h2>
+## Desenvolvimento
+Este projeto recria o Pong com as seguintes funcionalidades:
+  - **Jogador vs. Computador**: O jogador controla a barra azul na parte inferior da tela, enquanto o inimigo (computador) controla a barra vermelha na parte superior.
+  - **Movimentação e colisões**: A bola se move e rebate nas paredes laterais e nas barras dos jogadores. Quando a bola passa por uma das bordas superior ou inferior, o jogo é reiniciado e o ponto é atribuído ao adversário.
+  - **Velocidade e ângulos**: A bola tem uma velocidade variável e a direção muda aleatoriamente após colisões com as barras dos jogadores.
+
+## Executando o projeto
+Para executar este projeto, você precisa ter o JDK instalado. Compile o código e execute a classe `game` para iniciar o jogo.
 
 ```bash
-(SEM COMANDOS, POR ENQUANTO)
+javac -d bin src/pong/*.java
+java -cp bin pong.game
 ```
 
+## Exemplo de jogo em execução
 
-## Módulos:
-- [X] Seção 01: Sua jornada <br>
-  - Bem-vindo(a) a sua jornada!
+Aqui está um exemplo de como o jogo se parece:
+  <p align="center">
+    <img width="600" src = "README-INF/GIFs/PONG.gif">
+  </p>
 
-- [X] Seção 02: Configurando ambiente para programar em JAVA <br>
-  - Instalando JDK e Eclipse
-  - Configurando ambiente no MAC, OS/Linux (Opcional)
-  - Aplicando tema escuro no eclipse (Opcional)
-  - Instalando software de edição gráfica
-  - Configurando filtragem de bibliotecas
-    
-- [X] Seção 03: Algoritmos e conhecendo o eclipse<br>
-  - Criando projeto no eclipse.
-  - Algoritmos
+## Scripts
 
-- [X] Seção 04: Orientação a objetos e lógica (ATUALIZADO) - Resumo<br>
-  - O que é este módulo e orientações.
-  - Hello world e testando ambiente.
-  - Descomplicando variáveis.
-  - Descomplicando condições.
-  - Descomplicando laços de repetição.
-  - Classes e métodos de forma fácil.
-  - Importância das heranças.
-  - Listas em java.
+- `game.java`: Classe principal que gerencia o loop do jogo, renderização e entrada do jogador.
+- `Player.java`: Controla o movimento da barra do jogador.
+- `Enemy.java`: Controla o movimento da barra do inimigo (computador).
+- `ball.java`: Controla o comportamento da bola, incluindo colisões e movimentação.
 
-- [ ] Seção 05: Criando Jogo Mini Zelda<br>
-
-- [X] Seção 06: Aprendendo programação e lógica<br>
-  - Hello World
-  - Variáveis no JAVA
-  - Tipos de variáveis
-  - Constantes
-  - Arrays
-  - Condições
-  - Switch e Case'
-  - Operações avançadas e operações matemáticas
-  - Loopings
-  - [Bônus] Importando projetos no eclipse
-  - Explorando eclipse e funcionalidades (Bônus)
-  - Revisando programação e lógica com quadro
-
-
-- [X] Seção 07: Criando programa de leitura<br>
-  - Programa de leitrura 1/3
-  - Programa de leitrura 2/3
-  - Programa de leitrura 3/3
-
-- [X] Seção 08: Orientação a Objetos com JAVA<br>
-  - O que é orientação a objetos
-  - Criando classes em JAVA
-  - Tipos de classes e mais sobre OO
-  - Interface
-  - Tudo sobre métodos
-  - Atributos e métodos construtor
-  - Heranças avançadas e método super
-  - Exercício para fixar oo
-  - Entendendo instaceof e mais conceitos importantes
-  - Packages e import
-  - Revisão completa do módulo e dúvidas comuns
-
-- [X] Seção 09: Entendendo a lógica da programação de games<br>
-  - Lógica dos games
-  - Threads e loopings
-  - Vetores
-  - Arraylist
-  - Revisão completa sobre lógica e mais exemplos práticos
-
-- [X] Seção 10: Gráficos com JAVA<br>
-  - Frames e canvas
-  - Game looping profissional
-  - Renderizando e iniciando com buffers
-  - Mais de gráficos e debug
-  - Renderizando strings
-  - Spritesheet e rederizando sprites
-  - Animações e rotacionando objetos
-
-- [] Seção 11: Criando jogo pong (Bônus)<br>
+<br><br><br>
+<p align="justify">
+  Este projeto foi desenvolvido durate o Curso Desenvolvimento de Games Completo <br>
+  Curso da Danki.Code: https://cursos.dankicode.com/curso-dev-games
+</p>
+Módulo 11: Criando jogo pong (Bônus), aulas:<br>
   - Criando jogo pong 1/3
   - Criando jogo pong 2/3
   - Criando jogo pong 3/3
-
-- [] Seção 12: <br>
-- [] Seção 13: <br>
-- [] Seção 14: <br>
-- [] Seção 15: <br>
-- [] Seção 16: <br>
-- [] Seção 17: <br>
-- [] Seção 18: <br>
-- [] Seção 19: <br>
-- [] Seção 20: <br>
-- [] Seção 21: <br>
-- [] Seção 22: <br>
-- [] Seção 23: <br>
-- [] Seção 24: <br>
-- [] Seção 25: <br>
-- [] Seção 26: <br>
-- [] Seção 27: <br>
-- [] Seção 28: <br>
-- [] Seção 29: <br>
-- [] Seção 30: <br>
-- [] Seção 31: <br>
-- [] Seção 32: <br>
-- [] Seção 33: <br>
-- [] Seção 34: <br>
-- [] Seção 35: <br>
-- [] Seção 36: <br>
-- [] Seção 37: <br>
-- [] Seção 38: <br>
-- [] Seção 39: <br>
-- [] Seção 40: <br>
-- [] Seção 41: <br>
-- [] Seção 42: <br>
-- [] Seção 43: <br>
-- [] Seção 44: <br>
-- [] Seção 45: <br>
-- [] Seção 46: <br>
-- [] Seção 47: <br>
-- [] Seção 48: <br>
-- [] Seção 49: <br>
-- [] Seção 50: <br>
-- [] Seção 51: <br>
-- [] Seção 52: <br>
-- [] Seção 53: <br>
-- [] Seção 54: <br>
-- [] Seção 55: <br>
-- [] Seção 56: <br>
-- [] Seção 57: <br>
