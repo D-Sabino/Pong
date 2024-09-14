@@ -22,7 +22,7 @@ java -cp bin pong.game
 
 Aqui está um exemplo de como o jogo se parece:
   <p align="center">
-    <img width="600" src = "README-INF/GIFs/PONG.gif">
+    <img width="600" src = "src/assets/PONG.gif">
   </p>
 
 ## Scripts
